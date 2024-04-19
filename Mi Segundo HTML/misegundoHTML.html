@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <meta name="author" content="Tania Pinero Piñera">
+    <meta name="keywords" content="Imagenes, HTML, formato">
+
+    <!-- Favicon, icono de la pestaña del navegador -->
+    <!-- Tiene que ser de 512x512 -->
+    <link rel="shortcut icon" type="image/x-icon" href="IMG/Favicon.png">
+    <!-- Comentario: Shift, Comand, 7 -->
+    
+</head>
+<body>
+    <h1 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(68, 68, 68); letter-spacing: 5px;">Imágenes</h1>
+    <hr style="width: 50%;">
+
+    <div style="width: 50%; height: 500px; background: #000; margin: auto; text-align: center;">
+        <p style="color: #f0f0f0;">Una chica muy chulita chuleando</p>
+        <img src="IMG/Pride.jpg" alt="Primera foto" width="50%">
+        <img src="IMG/Pride.jpg" alt="Primera foto" width="48%">
+    </div>
+
+    <!--Formato de las imágenes-->
+    <!--jpg, png, gif, avif*, pero el recomendado por Google -> webp-->
+
+    <!-- Utilizar las imágenes como enlaces -->
+    <a href="https://amazon.es"><img src="IMG/view-abstract-3d-flower-pot.png" alt="Ir a Amazon" style="width: 10%;"></a>
+
+    <!--Mapa de imagen -->
+    <img src="IMG/view-abstract-3d-flower-pot.png" alt="Flor" usemap="#miMapa" style="width:20%;">
+    <map name="miMapa"></map> <!--Esto hay que ponerlo tal cual lo hayas puesto arriba-->
+    <area shape="rect" coords="112,286,274,226" href="https://amazon.es" alt="Compra comida">
+    
+    
+</body>
+</html>

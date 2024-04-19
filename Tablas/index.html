@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <meta name="author" content="Tania Pinero Piñera">
+    <meta name="keywords" content="Imagenes, HTML, formato">
+
+    <!-- Favicon, icono de la pestaña del navegador -->
+    <!-- Tiene que ser de 512x512 -->
+    <link rel="shortcut icon" type="image/x-icon" href="IMG/Favicon.png">
+    <!-- Comentario: Shift, Comand, 7 -->
+
+
+    <style>
+        table {
+            /*La tabla aes tipo bloque*/
+            margin: auto;
+            margin-top: 6%;
+            width: 80%;
+        }
+
+        table,
+        th,
+        td {
+            /*Tipos de borde: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+            border: 1px solid #79a7e6;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #b6dcff;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 1%;
+        }
+
+        .tabla2 {
+            margin-top: 1%;
+        }
+
+        .grupo-listas {
+            width: 80%;
+            margin: auto;
+        }
+
+        ol,
+        ul,
+        dl {
+            margin: auto;
+            margin-bottom: 4%;
+
+        }
+
+        #menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        #menu li {
+            float: left;
+        }
+
+        #menu li a {
+            display: block;
+            color: aliceblue;
+            text-align: center;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        #menu li a:hover {
+            color: #9e3d3d;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <!-- Encabezado de la tabla -->
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+        </tr>
+
+        <tr>
+            <td>Manuel</td>
+            <td>López</td>
+            <td>623121212</td>
+        </tr>
+        <!-- Códigos abreviados para autocompletar -->
+
+        <!-- tr>td*3 -->
+        <tr>
+            <td>Dani</td>
+            <td>López</td>
+            <td>324234312</td>
+        </tr>
+
+        <tr>
+            <td>Maria Eugenia</td>
+            <td>López de Cabezuelo</td>
+            <td>786543434</td>
+        </tr>
+
+    </table>
+
+    <h2>Tabla con RowsPan</h2>
+
+    <table class="tabla2">
+        <tr>
+            <th> Estación </th>
+            <th> Mes </th>
+            <th> Año </th>
+            <th> País </th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Verano</td>
+            <td>Julio</td>
+            <td colspan="2"> 2024 / España</td>
+        </tr>
+
+        <tr>
+            <td>Agosto</td>
+            <td colspan="2"> 2024 / España</td>
+        </tr>
+
+        <tr>
+            <td>Septiembre</td>
+            <td>2024</td>
+            <td>España</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Buen tiempo</td>
+        </tr>
+    </table>
+
+
+    <!-- Listas -->
+    <h2>Listas</h2>
+
+
+    <div class="grupo-listas">
+        <!-- Ordenadas -->
+        <h3>Listas ordenadas</h3>
+
+        <ol>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ol>
+
+        <h3>Listas no ordenadas</h3>
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ul>
+
+        <!-- Listas definiciones -->
+        <h3>Listas de descripciones o definiciones</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje para desarrollar páginas wev</dd>
+
+            <dt>CSS</dt>
+            <dd>Lenguaje de estilo para páginas web</dd>
+        </dl>
+
+        <!--Estilos en listas desordenadas-->
+
+        <!-- Sin estilo  -->
+        <ul style="list-style: none;">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ul>
+
+        <!-- Con un círculo -->
+        <ul style="list-style: circle;">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ul>
+
+        <!-- Con un cuadrado -->
+        <ul style="list-style: square;">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ul>
+
+        <!-- Tipo menú -->
+        <ul style="list-style: none;" id="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <!-- variaciones de listas ordenadas  -->
+
+        <!-- Listas con letras mayúsculas -->
+        <ol type="A">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ol>
+
+        <!-- Listas con letras en minúsculas -->
+        <ol type="a">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ol>
+
+        <!-- Listas en números romanos en mayúsculas  -->
+        <ol type="I">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ol>
+
+        <!-- Listas en números romanos en minúsculas  -->
+        <ol type="i">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ol>
+
+        <!-- Listas encadenadas/anidadas  -->
+        <ol type="I">
+            <li>Capítulo I</li>
+            <ol type="i">
+                <li>El rescate</li>
+                <li>La huida</li>
+                <li>La Carcel</li>
+                <li>El destierro</li>
+            </ol>
+            <li>Capítulo II</li>
+            <li>Capítulo III</li>
+        </ol>
+
+
+        <ul type="I">
+            <li>Capítulo I</li>
+            <ul type="i">
+                <li>El rescate</li>
+                <li>La huida</li>
+                <li>La Carcel</li>
+                <li>El destierro</li>
+            </ul>
+            <li>Capítulo II</li>
+            <li>Capítulo III</li>
+        </ul>
+
+        <!-- Otras variaciones en las ordenadas  -->
+        <ol start="5" reversed type="I" style="margin: auto; width: 20%;">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+            <li>Cinco</li>
+            <li>Seis</li>
+        </ol>
+
+    </div>
+
+</body>
+
+</html>

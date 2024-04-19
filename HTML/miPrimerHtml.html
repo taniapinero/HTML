@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Comentario: no se muestran en  la página pero es importante para el programador -->
+    <!-- La etiqueta head contiene los datos sobre el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML</title>
+    <meta name="author" content="Tania Pinero Piñera">
+    <meta name="keywords" content="HTML,etiquetas, head">
+
+    <link rel="shortcut icon" type="image/x-icon" href="IMG/mountain-8401084_1280.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilos.css">
+
+</head>
+
+<body style="background-color: #f2f2f2;">
+    <h1>Título principal de la página</h1>
+    <!-- Etiqueta sin cierre -->
+    <hr> <!-- Muestra una línea horizontal-->
+
+    <h2>Título H2 de la página</h2>
+
+    <br> <!-- Hace un salto de línea -->
+    <h3>Título H3 de la página</h3>
+    <h4>Título H4 de la página</h4>
+    <h5>Título H5 de la página</h5>
+    <h6>Título H6 de la página</h6>
+
+    <!-- La etiqueta <p> me permite organizar los párrafos con saltos de línea-->
+    <p title="Primer párrafo">Este es un párrafo con la etiqueta &lt;p&gt;</p>
+    <p>Sigo escribiendo con la etiqueta &lt;p&gt;</p>
+
+    <!-- Etiquetas con atributos -> requieren información para su contenido, por ejemplo, la etiqueta <a> que hace referencia a un enlace o link llamado href -->
+    <a href="https://google.es">Ir a Google</a>
+    <br>
+
+    <div class="caja-img">
+        <img src="IMG/mountain-8401084_1280.png" alt="Flor" width="300" title="Una flor bonita">
+    </div>
+
+    <!-- En un párrafo, si hago salto de línea dentro de él, ese salto no se mostrará. -->
+    <!-- Poner comando automáticamente -> Shift, Comand, 7-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quidem consequatur reiciendis, blanditiis repellat
+        dignissimos molestias, sapiente tenetur quia dolores repudiandae nulla quo excepturi sunt incidunt ducimus
+        vitae. Optio, vitae!</p>
+
+    <!-- Si quiero un texto -->
+    <pre>
+            Mi primera línea de párrafo
+            Mi segunda línea de párrafo
+            Mi tercera línea de párrafo
+            Mi cuarta línea de párrafo
+        </pre>
+
+    <!-- Si quiero poner un atributo de color, por ejemplo, necesito el atributo style="valor" -->
+    <h1 style="color:rgb(203, 129, 32); text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">Mi título con color</h1>
+
+    <!-- Formatos de texto -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6">
+                <p>En fe del <b>buen acogimiento</b> y honra que hace <strong> Excelencia </strong>a toda suerte de
+                    libros,
+                    como <i>príncipe </i>tan inclinado a favorecer las buenas artes, mayormente las que por su nobleza
+                    no se
+                    abaten al <em>servicio y granjerías del vulgo </em>, he determinado de sacar a luz El ingenioso
+                    hidalgo
+                    don Quijote de la Mancha, al abrigo del clarísimo nombre de Vuestra Excelencia, a quien, con el
+                    acatamiento que debo a tanta grandeza, suplico le reciba agradablemente en su protección, para que a
+                    su
+                    sombra</p>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-md-6">
+                <p>En fe del <b>buen acogimiento</b> y honra que hace <strong> Excelencia </strong>a toda suerte
+                    de libros,
+                    como <i>príncipe </i>tan inclinado a favorecer las buenas artes, mayormente las que por su
+                    nobleza no se
+                    abaten al <em>servicio y granjerías del vulgo </em>, he determinado de sacar a luz El
+                    ingenioso hidalgo
+                    don Quijote de la Mancha, al abrigo del clarísimo nombre de Vuestra Excelencia, a quien, con
+                    el
+                    acatamiento que debo a tanta grandeza, suplico le reciba agradablemente en su protección,
+                    para que a su
+                    sombra</p>
+
+            </div>
+        </div>
+
+
+        <p>H <sub>2</sub>O</p>
+        <p>Los metros son 50mt <sub>3</sub></p>
+
+        <!-- CITAS A UN AUTOR SE UTILIZA EL <blockquote></blockquote> -->
+        <p>Fragmento de <cite> Don Quijote de la Mancha: </cite> </p>
+        <blockquote cite="Don Quijote de la Mancha">
+            <p>En fe del <b>buen acogimiento</b> y honra que hace <strong> Excelencia </strong>a toda suerte de
+                libros,
+                como <i>príncipe </i>tan inclinado a favorecer las buenas artes, mayormente las que por su
+                nobleza no se
+                abaten al <em>servicio y granjerías del vulgo </em>, he determinado de sacar a luz El ingenioso
+                hidalgo
+                don Quijote de la Mancha, al abrigo del clarísimo nombre de Vuestra Excelencia, a quien, con el
+                acatamiento que debo a tanta grandeza, suplico le reciba agradablemente en su protección, para
+                que a su
+                sombra</p>
+        </blockquote>
+
+        <!-- Para indicar una abreviatura, se utiliza <abbr title=""></abbr> -->
+        <p>La traducción del <abbr title="W3 Consortium">W3C</abbr> está en todos los idiomas</p>
+
+        <!-- Para indicar una dirección, de un autor/propietario de un artículo, se utiliza <address></address> -->
+        <p>La dirección es:</p>
+        <address>
+            Calle Campo 81 <br>
+            13700. Tomelloso <br>
+        </address>
+
+        <!-- Mostrar un texto de derecha a izquierda -->
+        <p><bdo dir="rtl">taniA</bdo></p>
+
+        <!-- Colores en HTML. Se pueden poner en varios formaatos 
+        1. El nombre del color en inglés
+        2. El hexadecimal #ffffff #000000 #ff0000-->
+        <h2 style="color: #ff0000;"> Color </h2>
+        <h2 style="color: rgb(255, 0, 255);">Color</h2>
+        <h2 style="color: hsl(148, 86%, 58%);">Color</h2>
+
+
+        <!-- Enlaces a páginas externas que se muestra en una nueva pestañ (target=_blank) -->
+
+        <a href="https://youtube.com" target="_blank"> <img src="IMG/mail_FILL0_wght400_GRAD0_opsz24.png"
+                alt="ICONO DE TELEFONO"> </a>
+
+        <!-- Enlace para indicar un teléfono -->
+        <a href="tel:+34678676756"> <img src="IMG/call_FILL0_wght400_GRAD0_opsz24.png" alt="Teléfono"></a>
+
+        <a href="https://maps.app.goo.gl/AADkMmDMNpmEBxbEA"> <img src="IMG/pin_drop_FILL0_wght400_GRAD0_opsz24.png"
+                alt="Maps"></a>
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
