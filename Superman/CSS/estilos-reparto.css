@@ -1,0 +1,60 @@
+
+
+#nav-reparto{
+    background: #3c4bf0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.seccion-reparto{
+    margin-top: 4%;
+}
+
+#nav-reparto img{
+    width: 5%;
+    padding-left: 20px;
+}
+
+.seccion-reparto{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.seccion-reparto img{
+    width: auto;
+    height: auto;
+}
+
+.seccion-reparto div div{
+width: 500px;
+height:900px;
+background: #d5d5d5;
+box-shadow: 10px 10px 5px 0px #7e7e7e;
+margin: 25px;
+display: inline-block;
+overflow: hidden;
+border-radius: 30px;
+}
+
+.seccion-reparto div{
+height: 100vh;
+display: inline;
+}
+
+.seccion-reparto p{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.seccion-reparto h1{
+    margin-top: 70px;
+}
+
+li{
+    text-align: justify;  
+    font-family: "Noto Sans JP", sans-serif;
+    margin-right: 35px;
+    
+
+}

@@ -1,0 +1,81 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor{
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+h1, h2, h3{
+font-size: 21px;
+text-align: center;
+letter-spacing: 0.2px;
+
+}
+
+p{
+    font-size: 12px;
+    color: rgb(135, 135, 135);
+}
+
+label{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+select{
+    width: 100%;
+    margin: 1.5% 0 1.5% 0;
+    border: solid 1.5px;
+    border-color: rgb(255, 232, 213);
+    padding: 1%;
+}
+
+.cuadro{
+    width: 100%;
+    margin: 1.5% 0 1.5% 0;
+    border: solid 1.5px;
+    border-color: rgb(255, 232, 213);
+    padding: 1%;
+}
+
+.check{
+    width: 3%;
+
+}
+
+.centrar-botones{
+ margin-top: 8%;
+ margin-bottom: 12%;
+ text-align: right;
+}
+
+button{
+    margin: 1.5% 0 1.5% 0;
+    border: solid 1.5px;
+    border-color: rgb(191, 191, 191);
+    border-radius: 7px;
+    background-color: rgb(255, 232, 213);
+    padding: 1%;
+}
+
+button:hover{
+    border-color:  rgb(255, 232, 213); 
+    background-color: rgb(191, 191, 191 );
+    color: aliceblue;
+}
+
+hr{
+    color:  rgb(191, 191, 191 );
+    border: none;
+    height: 1px;
+    background:rgb(191, 191, 191 );
+    margin: 10% 0 6% 0;
+}
+
+
+
+
+
